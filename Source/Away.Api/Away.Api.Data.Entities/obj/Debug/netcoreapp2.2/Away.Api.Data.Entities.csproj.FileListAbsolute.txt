@@ -1,0 +1,8 @@
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Data.Entities\bin\Debug\netcoreapp2.2\Away.Api.Data.Entities.deps.json
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Data.Entities\bin\Debug\netcoreapp2.2\Away.Api.Data.Entities.dll
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Data.Entities\bin\Debug\netcoreapp2.2\Away.Api.Data.Entities.pdb
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Data.Entities\obj\Debug\netcoreapp2.2\Away.Api.Data.Entities.csproj.CoreCompileInputs.cache
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Data.Entities\obj\Debug\netcoreapp2.2\Away.Api.Data.Entities.AssemblyInfoInputs.cache
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Data.Entities\obj\Debug\netcoreapp2.2\Away.Api.Data.Entities.AssemblyInfo.cs
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Data.Entities\obj\Debug\netcoreapp2.2\Away.Api.Data.Entities.dll
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Data.Entities\obj\Debug\netcoreapp2.2\Away.Api.Data.Entities.pdb

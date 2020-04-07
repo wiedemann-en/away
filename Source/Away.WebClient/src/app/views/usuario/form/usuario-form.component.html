@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h3>{{title}}</h3>
+      <hr />
+      <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label>Nombre</label>
+          <input type="text" formControlName="nombre" class="form-control" [ngClass]="{ 'is-invalid': submitted && formData.nombre.errors }" />
+          <div *ngIf="submitted && formData.nombre.errors" class="invalid-feedback">
+            <div *ngIf="formData.nombre.errors.required">Ingrese el nombre</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Apellido</label>
+          <input type="text" formControlName="apellido" class="form-control" [ngClass]="{ 'is-invalid': submitted && formData.apellido.errors }" />
+          <div *ngIf="submitted && formData.apellido.errors" class="invalid-feedback">
+            <div *ngIf="formData.apellido.errors.required">Ingrese el apellido</div>
+          </div>
+        </div>
+        <div class="form-group" formGroupName="rol">
+          <label>Rol</label>
+          <select formControlName="id" class="custom-select" [ngClass]="{ 'is-invalid': submitted && formData.rol.controls.id.errors }">
+            <option value="" disabled>Seleccione rol</option>
+            <option *ngFor="let itemRol of roles" [ngValue]="itemRol.id">{{itemRol.nombre}}</option>
+          </select>
+          <div *ngIf="submitted && formData.rol.controls.id.errors" class="invalid-feedback">
+            <div *ngIf="formData.rol.controls.id.errors.required">Seleccione el rol</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && formData.email.errors }" />
+          <div *ngIf="submitted && formData.email.errors" class="invalid-feedback">
+            <div *ngIf="formData.email.errors.required">Ingrese el email</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Usuario</label>
+          <input type="text" formControlName="usuario" class="form-control" [ngClass]="{ 'is-invalid': submitted && formData.usuario.errors }" />
+          <div *ngIf="submitted && formData.usuario.errors" class="invalid-feedback">
+            <div *ngIf="formData.usuario.errors.required">Usuario es requerido</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Contraseña</label>
+          <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && formData.password.errors }" />
+          <div *ngIf="submitted && formData.password.errors" class="invalid-feedback">
+            <div *ngIf="formData.password.errors.required">Ingrese la contraseña</div>
+            <div *ngIf="formData.password.errors.minlength">La contraseña debe contener al menos 6 caracteres</div>
+          </div>
+        </div>
+        <div class="form-group text-right">
+          <div class=" btn-group mr-1">
+            <button type="submit" class="btn btn-success m-0" [disabled]="formGroup.invalid">Crear</button>
+          </div>
+          <div class=" btn-group mr-1">
+            <button type="button" class="btn btn-primary m-0" (click)="reset();">Limpiar</button>
+          </div>
+          <div class=" btn-group mr-1">
+            <button type="button" class="btn btn-primary m-0" (click)="cancel();">Cancelar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

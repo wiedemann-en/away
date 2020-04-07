@@ -1,0 +1,8 @@
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Contracts\bin\Debug\netcoreapp2.2\Away.Api.Contracts.deps.json
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Contracts\bin\Debug\netcoreapp2.2\Away.Api.Contracts.dll
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Contracts\bin\Debug\netcoreapp2.2\Away.Api.Contracts.pdb
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Contracts\obj\Debug\netcoreapp2.2\Away.Api.Contracts.csproj.CoreCompileInputs.cache
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Contracts\obj\Debug\netcoreapp2.2\Away.Api.Contracts.AssemblyInfoInputs.cache
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Contracts\obj\Debug\netcoreapp2.2\Away.Api.Contracts.AssemblyInfo.cs
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Contracts\obj\Debug\netcoreapp2.2\Away.Api.Contracts.dll
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Contracts\obj\Debug\netcoreapp2.2\Away.Api.Contracts.pdb

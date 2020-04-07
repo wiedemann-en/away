@@ -1,0 +1,115 @@
+<!-- <nav class="navbar navbar-dark bg-dark mb-5">
+  <a class="navbar-brand" routerLink="/">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/usuarios" *permission="['USUARIO:READ']">Usuarios</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkConfiguracionGeneral" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Configuración General</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkConfiguracionGeneral">
+          <a class="dropdown-item" routerLink="/alicuotasiva">Alicuotas Iva</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkArticulo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Artículos</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkArticulo">
+          <a class="dropdown-item" routerLink="/articulos">Artículos</a>
+          <a class="dropdown-item" routerLink="/articulocategorias">Categorías</a>
+          <a class="dropdown-item" routerLink="/articulolineas">Líneas</a>
+          <a class="dropdown-item" routerLink="/articulomarcas">Marcas</a>
+          <a class="dropdown-item" routerLink="/articulorubros">Rubros</a>
+          <a class="dropdown-item" routerLink="/articulotipos">Tipos</a>
+          <a class="dropdown-item" routerLink="/articulosubtipos">SubTipos</a>
+          <a class="dropdown-item" routerLink="/articulounidadesmedida">Unidades de Medida</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="javascript: void(0);" (click)="logout()">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-dark bg-dark mb-5">
+  <!-- <a class="navbar-brand" routerLink="/">Away Web</a> -->
+  <div class="navbar-expand mr-auto">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" routerLink="/">Home</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkSeguridad" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seguridad</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkSeguridad">
+          <a class="dropdown-item" routerLink="/usuarios" *permission="['USUARIO:READ']">Usuarios</a>
+          <a class="dropdown-item" routerLink="/roles" *permission="['ROL:READ']">Roles</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkConfiguracionGeneral" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Configuración General</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkConfiguracionGeneral">
+          <a class="dropdown-item" routerLink="/alicuotasiva" *permission="['ALICUOTAIVA:READ']">Alicuotas Iva</a>
+          <a class="dropdown-item" routerLink="/condicionesiva" *permission="['CONDICIONIVA:READ']">Condiciones de Iva</a>
+          <a class="dropdown-item" routerLink="/condicionespago" *permission="['CONDICIONPAGO:READ']">Condiciones de Pago</a>
+          <a class="dropdown-item" routerLink="/entedocumentotipos" *permission="['ENTEDOCUMENTOTIPO:READ']">Tipos de Documento</a>
+          <a class="dropdown-item" routerLink="/entedomiciliotipos" *permission="['ENTEDOMICILIOTIPO:READ']">Tipos de Domicilio</a>
+          <a class="dropdown-item" routerLink="/entetelefonotipos" *permission="['ENTETELEFONOTIPO:READ']">Tipos de Teléfono</a>
+          <a class="dropdown-item" routerLink="/paises" *permission="['PAIS:READ']">Países</a>
+          <a class="dropdown-item" routerLink="/provincias" *permission="['PROVINCIA:READ']">Provincias</a>
+          <a class="dropdown-item" routerLink="/partidos" *permission="['PARTIDO:READ']">Partidos</a>
+          <a class="dropdown-item" routerLink="/localidades" *permission="['LOCALIDAD:READ']">Localidades</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkCliente" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clientes</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkCliente">
+          <a class="dropdown-item" routerLink="/clientes" *permission="['CLIENTE:READ']">Clientes</a>
+          <a class="dropdown-item" routerLink="/clientecategorias" *permission="['CLIENTECATEGORIA:READ']">Categorías</a>
+          <a class="dropdown-item" routerLink="/clienterubros" *permission="['CLIENTERUBRO:READ']">Rubros</a>
+          <a class="dropdown-item" routerLink="/clientetipos" *permission="['CLIENTETIPO:READ']">Tipos</a>
+          <a class="dropdown-item" routerLink="/clientesubtipos" *permission="['CLIENTESUBTIPO:READ']">SubTipos</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkArticulo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Artículos</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkArticulo">
+          <a class="dropdown-item" routerLink="/articulos" *permission="['ARTICULO:READ']">Artículos</a>
+          <a class="dropdown-item" routerLink="/articulocategorias" *permission="['ARTICULOCATEGORIA:READ']">Categorías</a>
+          <a class="dropdown-item" routerLink="/articulolineas" *permission="['ARTICULOLINEA:READ']">Líneas</a>
+          <a class="dropdown-item" routerLink="/articulomarcas" *permission="['ARTICULOMARCA:READ']">Marcas</a>
+          <a class="dropdown-item" routerLink="/articulorubros" *permission="['ARTICULORUBRO:READ']">Rubros</a>
+          <a class="dropdown-item" routerLink="/articulotipos" *permission="['ARTICULOTIPO:READ']">Tipos</a>
+          <a class="dropdown-item" routerLink="/articulosubtipos" *permission="['ARTICULOSUBTIPO:READ']">SubTipos</a>
+          <a class="dropdown-item" routerLink="/articulounidadesmedida" *permission="['ARTICULOUNIDADMEDIDA:READ']">Unidades de Medida</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkUnidadNegocio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Unidades de Negocio</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkUnidadNegocio">
+          <a class="dropdown-item" routerLink="/companias" *permission="['COMPANIA:READ']">Compañías</a>
+          <a class="dropdown-item" routerLink="/empresas" *permission="['EMPRESA:READ']">Empresas</a>
+          <a class="dropdown-item" routerLink="/sucursales" *permission="['SUCURSAL:READ']">Sucursales</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkTransaccion" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Transacciones</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkTransaccion">
+          <a class="dropdown-item" routerLink="/ordenes" *permission="['ORDEN:READ']">Órdenes</a>
+          <a class="dropdown-item" routerLink="/movimientoscaja" *permission="['MOVIMIENTOCAJA:READ']">Movimientos de Caja</a>
+        </div>
+      </li>
+      <a class="nav-item nav-link active" routerLink="/proveedores" *permission="['PROVEEDOR:READ']">Proveedores</a>
+    </div>
+  </div>
+  <div class="navbar-expand ml-auto navbar-nav">
+    <div class="navbar-nav">
+      <a class="nav-link" href="javascript: void(0);" (click)="logout()">Logout</a>
+    </div>
+  </div>
+</nav>

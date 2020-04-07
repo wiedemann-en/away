@@ -1,0 +1,9 @@
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Notifications\bin\Debug\netcoreapp2.2\Away.Api.Notifications.deps.json
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Notifications\bin\Debug\netcoreapp2.2\Away.Api.Notifications.dll
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Notifications\bin\Debug\netcoreapp2.2\Away.Api.Notifications.pdb
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Notifications\obj\Debug\netcoreapp2.2\Away.Api.Notifications.csproj.CoreCompileInputs.cache
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Notifications\obj\Debug\netcoreapp2.2\Away.Api.Notifications.AssemblyInfoInputs.cache
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Notifications\obj\Debug\netcoreapp2.2\Away.Api.Notifications.AssemblyInfo.cs
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Notifications\obj\Debug\netcoreapp2.2\Away.Api.Notifications.dll
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Notifications\obj\Debug\netcoreapp2.2\Away.Api.Notifications.pdb
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Notifications\obj\Debug\netcoreapp2.2\Away.Api.Notifications.csprojAssemblyReference.cache

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Away.Api.Contracts\Away.Api.Contracts.csproj" />
+    <ProjectReference Include="..\Away.Api.Core\Away.Api.Core.csproj" />
+    <ProjectReference Include="..\Away.Api.Data.Entities\Away.Api.Data.Entities.csproj" />
+    <ProjectReference Include="..\Away.Api.Data.Repository\Away.Api.Data.Repository.csproj" />
+    <ProjectReference Include="..\Away.Api.Misc\Away.Api.Misc.csproj" />
+  </ItemGroup>
+
+</Project>

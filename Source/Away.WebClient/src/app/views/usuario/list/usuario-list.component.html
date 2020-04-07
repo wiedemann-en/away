@@ -1,0 +1,28 @@
+<div class="col-xs-12">
+  <table class="table table-bordered table-hover table-sm">
+    <thead class="thead-dark">
+      <tr>
+        <th class="text-center">#</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Email</th>
+        <th class="text-center">Activo</th>
+        <th class="text-center">&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of tableData" class="table-light">
+        <td class="text-center">{{row.id}}</td>
+        <td>{{row.nombre}}</td>
+        <td>{{row.apellido}}</td>
+        <td>{{row.email}}</td>
+        <td class="text-center">
+          <input type="checkbox" (click)="updateStatus(row)" [checked]="row.activo">
+        </td>
+        <td class="text-center">
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,43 @@
+<h2>Órdenes</h2>
+<div class="text-right" style="padding-top: 20px; padding-bottom: 20px;">
+  <div class="btn-group">
+    <button type="button" class="btn btn-success" (click)="create();" *permission="['ORDENFORM:WRITE']">Agregar</button>
+  </div>
+</div>
+<div class="col-xs-12">
+  <table datatable [dtOptions]="tableOptions" [dtTrigger]="tableTrigger" class="table table-bordered table-hover table-sm">
+    <thead class="thead-dark">
+      <tr>
+        <th class="text-center">#</th>
+        <th>Tipo Orden</th>
+        <th>Estado</th>
+        <th>Nro. OC</th>
+        <th>Nro. Comprobante</th>
+        <th>Ingreso</th>
+        <th class="text-center">&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of tableData" class="table-light">
+        <td class="text-center">{{row.id}}</td>
+        <td>{{row.codTipoOrden}}</td>
+        <td>{{row.codEstado}}</td>
+        <td>{{row.nroOC}}</td>
+        <td>{{row.nroComprobante}}</td>
+        <td>{{row.fechaIngreso}}</td>
+        <td class="text-center">
+          <div class="btn-group mr-1" *permission="['ORDENFORM:WRITE']">
+            <button class="btn btn-sm button-action" (click)="update(row);">
+              <i class="fa fa-pencil" title="Editar"></i>
+            </button>
+          </div>
+          <div class="btn-group mr-1" *permission="['ORDENFORM:WRITE']">
+            <button class="btn btn-sm button-action" (click)="delete(row);">
+              <i class="fa fa-remove" title="Eliminar"></i>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

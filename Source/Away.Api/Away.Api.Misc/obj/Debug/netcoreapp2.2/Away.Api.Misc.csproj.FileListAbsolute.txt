@@ -1,0 +1,9 @@
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Misc\bin\Debug\netcoreapp2.2\Away.Api.Misc.deps.json
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Misc\bin\Debug\netcoreapp2.2\Away.Api.Misc.dll
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Misc\bin\Debug\netcoreapp2.2\Away.Api.Misc.pdb
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Misc\obj\Debug\netcoreapp2.2\Away.Api.Misc.csproj.CoreCompileInputs.cache
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Misc\obj\Debug\netcoreapp2.2\Away.Api.Misc.AssemblyInfoInputs.cache
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Misc\obj\Debug\netcoreapp2.2\Away.Api.Misc.AssemblyInfo.cs
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Misc\obj\Debug\netcoreapp2.2\Away.Api.Misc.dll
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Misc\obj\Debug\netcoreapp2.2\Away.Api.Misc.pdb
+C:\Source\Repos\Militec\Away\Source\Away.Api\Away.Api.Misc\obj\Debug\netcoreapp2.2\Away.Api.Misc.csprojAssemblyReference.cache

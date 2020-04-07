@@ -1,0 +1,25 @@
+<div class="container body-content">
+    <div class="jumbotron">
+      <div class="col-md-6 offset-md-3">
+          <p *ngIf="message" class="text-center error">{{message}}</p>
+          <form [formGroup]="formGroup" (ngSubmit)="login()">
+            <div class="form-group clearfix">
+              <label for="user" class="col-md-3 col-sm-5 col-xs-12">Usuario</label>
+              <div class="col-md-9 col-sm-7 col-xs-12">
+                <input type="text" class="form-control" formControlName="user" [ngClass]="{ 'is-invalid': submitted && formData.user.errors }" />
+              </div>
+            </div>
+            <div class="form-group clearfix">
+              <label for="pass" class="col-md-3 col-sm-5 col-xs-12">Contraseña</label>
+              <div class="col-md-9 col-sm-7 col-xs-12">
+                <input type="password" class="form-control" formControlName="pass" [ngClass]="{ 'is-invalid': submitted && formData.pass.errors }" />
+              </div>
+            </div>
+            <div class="col-md-9 col-sm-7 col-xs-12 form-group text-right">
+              <button class="btn btn-success" type="submit" [disabled]="formGroup.invalid">Login</button>
+            </div>
+          </form>
+        </div>
+    </div>    
+  </div>
+  
